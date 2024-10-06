@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { IoCalculator, IoContractOutline, IoLogoReact } from "react-icons/io5";
-import { SidebarMenuItem } from "./SidebarMenuItem";
+import { SidebarMenuItem } from "../sidebar/SidebarMenuItem";
+import { GrFavorite } from "react-icons/gr";
 
 const menuItems = [
     {
@@ -20,7 +21,13 @@ const menuItems = [
         icon: <IoContractOutline size={40} />,
         title: "Pokemons",
         description: "Generación estática"
-    }
+    },
+    {
+        path: "/dashboard/favorites",
+        icon: <GrFavorite size={40} />,
+        title: "Favoritos",
+        description: "Global State"
+    },
 ]
 
 export const Sidebar = () => {
