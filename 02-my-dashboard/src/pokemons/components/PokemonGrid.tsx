@@ -1,4 +1,4 @@
-import { SimplePokemon } from "../pokemons/interfaces/simple-pokemon";
+import { SimplePokemon } from "../interfaces/simple-pokemon";
 // import Image from "next/image"; // Import the Image component from the appropriate library
 import { PokemonCard } from "./PokemonCard";
 
