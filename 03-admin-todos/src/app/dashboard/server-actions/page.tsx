@@ -10,9 +10,10 @@ export const metadata = {
   description: 'Listado de todos los todos',
 }
 
-export default async function RestTodosPage() {
+export default async function ServerTodosPage() {
   const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
-  console.log('construido desde rest todos');
+  console.log('construido desde server actions');
+
   // useEffect(() => {
   //   fetch('/api/todos')
   //     .then(response => response.json())
@@ -20,13 +21,15 @@ export default async function RestTodosPage() {
   // }, []);
 
   return (
-    <div>
+    <>
+      <span className="text-3xl mb-10">Server Actions</span>
+
       <div className="w-full px-5 mx-5 mb-5">
         <NewTodo />
       </div>
       
       <TodosGrid todos={ todos }/>
 
-    </div>
+    </>
   );
 }
