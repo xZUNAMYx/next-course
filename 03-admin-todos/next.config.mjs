@@ -8,6 +8,11 @@ const nextConfig = {
                 port: '',
                 pathname: '/sources/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+                port: '',
+            },
         ],
     },
 };

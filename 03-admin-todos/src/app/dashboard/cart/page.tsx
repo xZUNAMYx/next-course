@@ -57,7 +57,7 @@ export default async function CartPage() {
               <h3 className="text-3xl font-bold text-gray-700">${ (totalToPay * 1.15).toFixed(2) }</h3>
             </div>
 
-            <span className="font-bold text-gray-500">${ (totalToPay * 0.15).toFixed(2) }</span>
+            <span className="text-center font-bold text-gray-500">${ (totalToPay * 0.15).toFixed(2) }</span>
           </WidgetItem>
         </div>
       </div>
